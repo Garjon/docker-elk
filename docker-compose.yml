@@ -15,7 +15,6 @@ logstash:
     - elasticsearch
 kibana:
   build: kibana/
-  log_driver: syslog
   volumes:
     - ./kibana/config/kibana.yml:/opt/kibana/config/kibana.yml
   ports:
